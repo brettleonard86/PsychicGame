@@ -59,7 +59,7 @@ document.onkeyup = function(event) {
     record();
 }
 
-document.getElementById('openKeyboard').addEventListener('click', function(){
+document.getElementById('openKeyboard').addEventListener('tap', function(){
     var inputElement = document.getElementById('hiddenInput');
     inputElement.style.visibility = 'visible'; // unhide the input
     inputElement.focus(); // focus on it so keyboard pops
