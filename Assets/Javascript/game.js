@@ -3,7 +3,7 @@ var ranLet, guessesRemaining, guessedLetters;
 // Declares the tallies to 0
 var wins = 0;
 var losses = 0;
-var guessesRemaining = 9;
+var guessesRemaining = [9];
 var guessedLetters = "Pick a letter to start";
 // resets these variables
 var theWorks = function() {
@@ -35,6 +35,7 @@ document.onkeyup = function(event) {
         }
     }
     if (!validGuess) {
+        document.getElementById('ahole').play();
         alert("Please select a real letter!")
         return;
     }
